@@ -31,25 +31,27 @@ SW[0] is x, SW[1] is y, SW[2] is the select line and LED[0] is the output m. SW[
 
 #### **Questions**/Tasks
 
-*In the rtl schematic screen shot, the two **and gates** are connected to select and not select. Describe what they are doing in terms of what a mux does.*
+*In the rtl schematic screen shot, the two **and gates** are connected to select and not select. Describe what they are doing in terms of what a mux does?* **The top gate is not select and bottom is select hence the two given gates make a mux with the or gate at the end which is the choosing result. **
 
 *In the rtl schematic screen shot, what does the **or gate** do in terms of what a mux does?*
 
-*How does the schematic change after running synthesis?*
+**Choosing one of the gates to be the resulting output.**
 
-*After running synthesis and implementation, clicking on synthesis under RTL, synthesis and Implementation continues to display the LUT based diagram. Not the gate based diagram. Why? Form a reasonable, non-trivial, relevant hypothesis.* 
+*How does the schematic change after running synthesis?* **It shows what vivado thinks of or a summary of what is meant to be created in visual diagrams.**
 
- *The black and white design window appears first after running which step of the workflow?*
+*After running synthesis and implementation, clicking on synthesis under RTL, synthesis and Implementation continues to display the LUT based diagram. Not the gate based diagram. Why? Form a reasonable, non-trivial, relevant hypothesis.* **The lut is the table that in general form represents what goes into the circuit from left(inputs) and what exits(outputs), showing general form of the circuit with the mux inside of a lut.**
 
-*How what can you click on to see a region of the device window change from some color to white?*
+ *The black and white design window appears first after running which step of the workflow?* **During Implementation**.
 
-*White arrows in the screen shot above are helping us see what?* 
+*How what can you click on to see a region of the device window change from some color to white?***By opening up the device schematic and clicking on any part of the device.**
 
-*How does Data flow in the fpga from left to right, right to left, bottom up, top down?*
+*White arrows in the screen shot above are helping us see what?***Inputs and outputs**
+
+*How does Data flow in the fpga from left to right, right to left, bottom up, top down?***Data is received for the two x and y switches and switch s is the determining switch to which result will be the output m.**
 
 *What is the verilog symbol for the white line going up at an angle in the device diagram?*
 
-
+**It is represented by an arrow.**
 
 ## lab1_1_mux2-1-2bitwide
 
@@ -75,17 +77,17 @@ One select line now selects between two pair of inputs and displays one of the p
 
 #### Questions/Tasks
 
-*Explain how to zoom in on the above Device Screen Shot.*
+*Explain how to zoom in on the above Device Screen Shot.***Either scrolling or click and drag to make a box on the screen shot**
 
-*Do you see pictures of muxes in the Device Screen Shot? Are they used?*
+*Do you see pictures of muxes in the Device Screen Shot? Are they used?* **Yes, they are inside of the Lut.**
 
-*Which stage of the work flow choose the specific LUT above?*
+*Which stage of the work flow choose the specific LUT above?***It should be the Show Cell Connections.**
 
-*Which stage of the work flow chooses the green lines?*
+*Which stage of the work flow chooses the green lines?***It is called routing resources.**
 
-*What do the white lines represent?* 
+*What do the white lines represent?* **Wires**
 
-*What do the spots where white lines cross represent?*
+*What do the spots where white lines cross represent?***Intersection or split between the wires.**
 
 ## lab1_2_mux2-1-tristate
 
@@ -111,27 +113,37 @@ Two muxes are implemented using the same inputs with the same select line.  So i
 
 #### Questions/Tasks
 
-*In the RTL schematic, what is RTL_Mux g1_i doing?*
+*In the RTL schematic, what is RTL_Mux g1_i doing?***Making sure that the switch is set to either zero or one(?)**
 
-*Which of the two verilog implemented muxes actually created a tristate symbol in the RTL schematic?*
+*Which of the two verilog implemented muxes actually created a tristate symbol in the RTL schematic?***It should be the g1-i mux.**
 
-*After Synthesis, which of the two verilog implemented muxes looks more simple?*
+*After Synthesis, which of the two verilog implemented muxes looks more simple?***Bottom g1-i mux**
 
-*After Synthesis, why hasn't Vivado detected that the two circuits are identical?*
+*After Synthesis, why hasn't Vivado detected that the two circuits are identical?***B/c they have different input/outputs**
 
-*After implementation, does the schematic change? If so, put a screen shot here.*
+*After implementation, does the schematic change? If so, put a screen shot here.***No**
 
-*Do the insides of the device reflect the schematic .. after implementation?*
+*Do the insides of the device reflect the schematic .. after implementation?***Yes**
 
 *What are the truth tables of the one or two LUT(s)? Put a screen shot(s) here.*
 
-*Are the truth tables the same or different? Why would Vivado do this? Is this a bug in Vivado?*
+Lut 1:
 
-*Do some tests modifying this project. Can you make the one line of code mux into a 4 input, 2 select line, 1 output mux in one line?*
+![](Capture1.PNG)
+
+Lut 2:
+
+![](Capture2.PNG)
+
+*Are the truth tables the same or different? Why would Vivado do this? Is this a bug in Vivado?***Yes, no they are suppose to be the same b/c inputs represent the same values.**
+
+*Do some tests modifying this project. Can you make the one line of code mux into a 4 input, 2 select line, 1 output mux in one line?***It is possible **
 
 ## lab1_2_tb_mux2-1-2bitwide
 
 The screen shots and port diagrams above are not going to be done for you. For the rest of the semester, you are to supply the missing diagrams. For example, starting with the RTL screenshot, everything through testing is missing. Describe how to test this circuit. **Crop the screen shots**!
+
+**x[0] and x[1] represent value of 0 in the two muxes while y[0] and y[1] represent the value of 1 for input into the mux, thus the s switch will make the lights bright when no turned on for x values and turned on for y values.**
 
 ### Port Diagram
 
@@ -153,11 +165,11 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 #### Questions/Tasks
 
-*tb stands for what?*
+*tb stands for what?***Test bench**
 
-*What verilog code is the top level module, the test or the circuit?*
+*What verilog code is the top level module, the test or the circuit?***top level module**
 
-*The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?*
+*The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?***It has a waveform for values 0 and 1**
 
 *What name would you give to this verilog abstraction level?*
 
