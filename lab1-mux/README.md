@@ -137,7 +137,7 @@ Lut 2:
 
 *Are the truth tables the same or different? Why would Vivado do this? Is this a bug in Vivado?***Yes, no they are suppose to be the same b/c inputs represent the same values.**
 
-*Do some tests modifying this project. Can you make the one line of code mux into a 4 input, 2 select line, 1 output mux in one line?***It is possible **
+*Do some tests modifying this project. Can you make the one line of code mux into a 4 input, 2 select line, 1 output mux in one line?***It is possible as shown below in the picture.**
 
 ## lab1_2_tb_mux2-1-2bitwide
 
