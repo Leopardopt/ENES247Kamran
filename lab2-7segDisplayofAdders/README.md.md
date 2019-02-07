@@ -18,9 +18,13 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 #### Synthesis Schematic
 
-#### Implementation Design Screen shot of something interesting
+![](C:\Users\SET253-24U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab2-7segDisplayofAdders\TestingSchematic.PNG)
+
+#### Implementation Design Screen shot of something interesting![](C:\Users\SET253-24U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab2-7segDisplayofAdders\TestingInteresting.PNG)
 
 #### Testing
+
+There are inputs called SW which represent the 16 inputs going into the gates. There are 17 LED lights, 8 An, 1 DP, and 7 C for outputs of the given circuit. Switches J15-R13 (SW[7:0]) are to change the display of the AN and DP. V8-V10 (SW[8:16]) will get rid of the segments on display meaning active high and when off is active low making the LED turn off and segments to turn on. Different numbers can be made from playing with these switches according to knowing which does which.(mentioned in journal)
 
 #### Prompts
 
@@ -104,9 +108,15 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
 #### Synthesis Schematic
 
+![](C:\Users\SET253-24U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab2-7segDisplayofAdders\SyntheticSchematicBCD.PNG)
+
 #### Implementation Design Screen shot of something interesting
 
+![](C:\Users\SET253-24U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab2-7segDisplayofAdders\ImplementBCD.PNG)
+
 #### Testing
+
+There are 4 switches of x representing the 4 binary digits showing the number on 7 seg display. By working from 8-0 or x[3] to x[0], there will be digits displayed in response to that binary code.
 
 #### Prompts
 
@@ -164,6 +174,8 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
 #### Testing
 
+This includes inputs of 4 called hex and outputs of carry and 4 bcd which will light up with the change of switches for hex. Starting from 1-8, if it goes to 10, 1 moves to carry and then numbers can be made until 15. 
+
 #### Prompts
 
 *A BEL is a [Basic Element of Logic](https://www.rapidwright.io/docs/Xilinx_Architecture.html).  Start reading the link. What is a routing BEL most similar to?*  
@@ -216,9 +228,15 @@ The goal is to display BCD with an LED representing 1, the switches representing
 
 #### Synthesis Schematic
 
+![](C:\Users\SET253-24U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab2-7segDisplayofAdders\SynthSchemhextoDisp.PNG)
+
 #### Implementation Design Screen shot of something interesting
 
+![](C:\Users\SET253-24U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab2-7segDisplayofAdders\ImplementHexDisp.PNG)
+
 #### Testing
+
+There is 4 hex switches which will change the 7 seg outputs up to #9. The carry is accounted for BCD for saving the 10 from before results up until 15 with the LED lights which are hex as well. 
 
 #### Prompts
 
@@ -257,9 +275,15 @@ Build 3 bit adder. Two groups of 3 switches, added together fit in four bits and
 
 #### Synthesis Schematic
 
+![](C:\Users\SET253-24U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab2-7segDisplayofAdders\SynthSchem5.PNG)
+
 #### Implementation Design Screen shot of something interesting
 
+![](C:\Users\SET253-24U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab2-7segDisplayofAdders\Implement5.PNG)
+
 #### Testing
+
+To be continued
 
 #### Prompts
 
