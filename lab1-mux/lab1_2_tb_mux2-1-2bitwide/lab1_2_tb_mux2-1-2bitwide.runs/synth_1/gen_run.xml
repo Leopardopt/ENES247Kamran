@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549561895">
-  <File Type="PA-TCL" Name="mux_2bit_2_to_1_dataflow_tb.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="mux_2bit_2_to_1_dataflow_tb_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="mux_2bit_2_to_1_dataflow_tb_reports.tcl"/>
-  <File Type="RDS-RDS" Name="mux_2bit_2_to_1_dataflow_tb.vds"/>
-  <File Type="RDS-UTIL" Name="mux_2bit_2_to_1_dataflow_tb_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="mux_2bit_2_to_1_dataflow_tb_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="mux_2bit_2_to_1_dataflow_tb.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="mux_2bit_2_to_1_dataflow_tb_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="mux_2bit_2_to_1_dataflow_tb_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549752377">
+  <File Type="PA-TCL" Name="mux_2bit_2_to_1_dataflow.tcl"/>
+  <File Type="REPORTS-TCL" Name="mux_2bit_2_to_1_dataflow_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mux_2bit_2_to_1_dataflow.vds"/>
+  <File Type="RDS-UTIL" Name="mux_2bit_2_to_1_dataflow_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mux_2bit_2_to_1_dataflow_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mux_2bit_2_to_1_dataflow.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/lab1_2_tb_mux2-1-2bitwide/mux_2bit_2_to_1_dataflow.v">
+    <File Path="$PPRDIR/mux_2bit_2_to_1_dataflow.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/mux_2bit_2_to_1_dataflow.v"/>
-        <Attr Name="ImportTime" Val="1548632292"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/lab1_2_tb_mux2-1-2bitwide/mux_2bit_2_to_1_dataflow_tb.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/mux_2bit_2_to_1_dataflow_tb.v"/>
-        <Attr Name="ImportTime" Val="1548632292"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -31,16 +17,14 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="mux_2bit_2_to_1_dataflow_tb"/>
+      <Option Name="TopModule" Val="mux_2bit_2_to_1_dataflow"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/lab1_2_tb_mux2-1-2bitwide/Nexys4DDR_Master.xdc">
+    <File Path="$PPRDIR/Nexys4DDR_Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/Nexys4DDR_Master.xdc"/>
-        <Attr Name="ImportTime" Val="1548632292"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

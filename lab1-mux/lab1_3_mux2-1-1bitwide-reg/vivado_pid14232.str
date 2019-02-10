@@ -1,0 +1,193 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 14232
+License: Customer
+
+Current time: 	Sat Feb 09 23:28:21 EST 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 55 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/VivadoXilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/VivadoXilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kamra
+User home directory: C:/Users/kamra
+User working directory: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/VivadoXilinx/Vivado
+HDI_APPROOT: D:/VivadoXilinx/Vivado/2018.3
+RDI_DATADIR: D:/VivadoXilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/VivadoXilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/kamra/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/kamra/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/kamra/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/VivadoXilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg/vivado.log
+Vivado journal file location: 	C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg/vivado.jou
+Engine tmp dir: 	C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg/.Xil/Vivado-14232-MSI
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/VivadoXilinx/Vivado/2018.3
+XILINX_SDK: D:/VivadoXilinx/SDK/2018.3
+XILINX_VIVADO: D:/VivadoXilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/VivadoXilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 558 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab1-mux\lab1_3_mux2-1-1bitwide-reg\lab1_3_mux2-1-1bitwide-reg.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg' INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-23U/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 48 MB. Current time: 2/9/19, 11:28:23 PM EST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VivadoXilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 106 MB (+108624kb) [00:00:15]
+// [Engine Memory]: 608 MB (+486156kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3273 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 709.934 ; gain = 127.137 
+// [Engine Memory]: 707 MB (+71401kb) [00:00:18]
+// Project name: lab1_3_mux2-1-1bitwide-reg; location: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 737 MB. GUI used memory: 51 MB. Current time: 2/9/19, 11:28:38 PM EST
+// Elapsed time: 137 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Feb  9 23:31:02 2019] Launched impl_1... Run output will be captured here: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 148 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// [Engine Memory]: 744 MB (+1928kb) [00:05:21]
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 773.688 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3114 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBD5A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,637 MB. GUI used memory: 54 MB. Current time: 2/9/19, 11:33:46 PM EST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.runs/impl_1/mux_2_to_1_behavior.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,641 MB (+901434kb) [00:05:33]
+dismissDialog("Auto Connect"); // bx (cp)
+// Elapsed time: 24 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_3_mux2-1-1bitwide-reg/lab1_3_mux2-1-1bitwide-reg.runs/impl_1/mux_2_to_1_behavior.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// WARNING: HEventQueue.dispatchEvent() is taking  2236 ms.

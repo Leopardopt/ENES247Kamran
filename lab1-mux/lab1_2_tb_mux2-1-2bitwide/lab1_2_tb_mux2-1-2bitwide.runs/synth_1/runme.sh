@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin
+  PATH=D:/VivadoXilinx/SDK/2018.3/bin;D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/VivadoXilinx/Vivado/2018.3/bin
 else
-  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin:$PATH
+  PATH=D:/VivadoXilinx/SDK/2018.3/bin;D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/VivadoXilinx/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-23U/Documents/GitHub/ENES247Kamran/lab1-mux/lab1_2_tb_mux2-1-2bitwide/lab1_2_tb_mux2-1-2bitwide.runs/synth_1'
+HD_PWD='C:/Users/kamra/Downloads/ENES247-master/ENES247-master/lab1-mux/lab1_2_tb_mux2-1-2bitwide/lab1_2_tb_mux2-1-2bitwide.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log mux_2bit_2_to_1_dataflow_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux_2bit_2_to_1_dataflow_tb.tcl
+EAStep vivado -log mux_2bit_2_to_1_dataflow.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux_2bit_2_to_1_dataflow.tcl
