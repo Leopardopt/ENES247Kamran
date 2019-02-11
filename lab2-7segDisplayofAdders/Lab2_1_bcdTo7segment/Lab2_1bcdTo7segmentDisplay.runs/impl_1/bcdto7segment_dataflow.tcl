@@ -66,7 +66,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint bcdto7segment_dataflow_routed.dcp
-  set_property webtalk.parent_dir C:/Users/SET253-24U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab2-7segDisplayofAdders/Lab2_1_bcdTo7segment/Lab2_1bcdTo7segmentDisplay.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab2-7segDisplayofAdders/Lab2_1_bcdTo7segment/Lab2_1bcdTo7segmentDisplay.cache/wt [current_project]
   catch { write_mem_info -force bcdto7segment_dataflow.mmi }
   write_bitstream -force bcdto7segment_dataflow.bit 
   catch {write_debug_probes -quiet -force bcdto7segment_dataflow}
