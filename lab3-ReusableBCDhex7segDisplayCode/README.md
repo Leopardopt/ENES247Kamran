@@ -10,15 +10,27 @@ The  HexToBCD algorithm in the last lab worked for one hex group. The problem is
 
 #### Port Diagram
 
+![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\PortDiag1.PNG)
+
 #### Verilog Code
+
+![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\decoder3_8Code.PNG)
 
 #### RTL Schematic Screen shot
 
+![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\DecoderRTLSchem.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\Decoder1SynthSchem.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\Implement1.PNG)
+
 #### Testing
+
+There are 3 inputs or switches of x and 8 outputs of y and another 8 for z. The goal here is to compare the gate level vs. RTL coding for a decoder. It is simple and easy to demonstrate since the switch will cause both y and z to do the same objective and turn on a LED. The code gives the exact instruction of how to turn on each LED.
 
 ___
 
@@ -27,6 +39,8 @@ ___
 This code tests the ability to count clock pulses and display 32 bits split into two groups of 16. SW[0] switches between the two groups. 
 
 #### Port Diagram
+
+![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\PortDiag2.PNG)
 
 #### Verilog Code
 
@@ -52,13 +66,15 @@ Carry Logic Being used
 
 #### Testing
 
+3 Select bits select 1 of 8, 4 bit groups from a 32 bit constant and display on LEDs.  
+
 ___
 
 #### Prompts
 
 ## 2_32bitBCDto16LEDs
 
-Modify the above code using this [algorithm](https://pubweb.eng.utah.edu/~nmcdonal/Tutorials/BCDTutorial/BCDConversion.html) to work with 32 bits rather than 16. Which of these three is the starting point?  
+Modify the above code using this [algorithm](https://pubweb.eng.utah.edu/~nmcdonal/Tutorials/BCDTutorial/BCDConversion.html) to work with 32 bits rather than 16. Which of these three is the starting point?  **The third screen shot is the best to use.**
 
 ![1550060430510](1550060430510.png)
 
@@ -108,7 +124,7 @@ Four Luts are used to handle the multiplying asked for in the bit slicing.
 
 #### Testing
 
-3 Select bits select 1 of 8, 4 bit groups from a 32 bit constant and display on LEDs.  
+
 
 ------
 
