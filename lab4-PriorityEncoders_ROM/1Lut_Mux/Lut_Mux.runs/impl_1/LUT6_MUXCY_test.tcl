@@ -66,7 +66,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint LUT6_MUXCY_test_routed.dcp
-  set_property webtalk.parent_dir C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/1Lut_Mux/Lut_Mux.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/1Lut_Mux/Lut_Mux.cache/wt [current_project]
   catch { write_mem_info -force LUT6_MUXCY_test.mmi }
   write_bitstream -force LUT6_MUXCY_test.bit 
   catch {write_debug_probes -quiet -force LUT6_MUXCY_test}

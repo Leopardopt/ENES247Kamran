@@ -30,59 +30,55 @@ ___
 
 #### Prompts
 
-*Does it look like the primitives can be accessed in Verilog?* 
+*Does it look like the primitives can be accessed in Verilog?* Yes, there is a connection between the given verilog primitives and diagram.
 
-*Can you see a direct relationship between the primitive used and the primitive referenced in the Verilog code?*
+*Can you see a direct relationship between the primitive used and the primitive referenced in the Verilog code?*Yes, they are both showing the same picture except one is using buffers to help reduce of glitches.
 
-*The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?*
+*The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?* These represent the switches which will be changing while going through the lut.
 
-*How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?*
+*How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?* It needs a code of hex digits describing how big the table is and when/ not to turn the LED on/off. (To make truth table)
 
-*What Line of the Code puts a truth table in the LUT?*
+*What Line of the Code puts a truth table in the LUT?*Line 9 initiates and until line 16, it specifies which inputs/outputs are suppose to be what within the table.
 
-*How many rows are there to the truth table?*
-
-*How is the LUT instantiation different from the normal instantiation of calling a pre-existing module?*
+*How many rows are there to the truth table?* 64 rows.
 
 *Look through chapters 3 and 4 of the Vivado 7 Series Libraries.  Focus on the Design Entry Method box.  Then answer these questions.*
 
-*What does instantiation mean?*
+*What does instantiation mean?* It means to move an existing module into the top module with a specific given name.
 
-*What does inference mean?*
+*What does inference mean?* An idea or conclusion drawn from evidence and reasoning.
 
-*Have we inferred buffers (BUFG) in projects before?*
+*Have we inferred buffers (BUFG) in projects before?* Yes, it is done when doing mux which vivado creates buffers for to avoid problems.
 
-*What does instantiation mean?*
+*Verilog has tristate [buffer primitives](http://verilog.renerta.com/mobile/source/vrg00003.htm)  named bufif0 and bufif1. These names don't appear in the Vivado 7 series libraries. Why? What are the risks of using the buffers Xilinx has named in this document?*  The two buffers are used to correct common errors or problems within the circulation of current. Not having them as part of the library may cause several unnecessary glitches to the system.
 
-*What does inference mean?*
+*Look up LUT6 in the Vivado 7 series library document. We instantiated it in this project. Is Instantiation possible according to the document?* Yes, according to document, it can be any hex value but usually in lab used within the range of the given 16 digits.
 
-*Verilog has tristate [buffer primitives](http://verilog.renerta.com/mobile/source/vrg00003.htm)  named bufif0 and bufif1. These names don't appear in the Vivado 7 series libraries. Why? What are the risks of using the buffers Xilinx has named in this document?*
+*What is the preferred design entry method?* A method for a better, less error causing design to the verilog code.(?)
 
-*Look up LUT6 in the Vivado 7 series library document. We instantiated it in this project. Is Instantiation possible according to the document?* 
+*Is MUXCY in the Vivado 7 series library document like LUT6?* Yes, it is.
 
-*What is the preferred design entry method?* 
+*We instantiated MUXCY in this project's verilog code. And it looks like it was successfully implemented. We can test it. Read this [article](https://forums.xilinx.com/t5/Welcome-Join/where-are-the-muxcy-and-xorcy/td-p/311931) from from Jan 2013 about MUXCY and XORCY. Do you think it is wise to use this piece of a CLB in a circuit design project?* Yes, it is possible and will provide interesting results as carries to the LUT.
 
-*Is MUXCY in the Vivado 7 series library document like LUT6?* 
+*What would you guess is the preferred entry method for a MUXCY .. if it existed in the Vivado 7 series library?* It would be used as a simple carry.
 
-*We instantiated MUXCY in this project's verilog code. And it looks like it was successfully implemented. We can test it. Read this [article](https://forums.xilinx.com/t5/Welcome-Join/where-are-the-muxcy-and-xorcy/td-p/311931) from from Jan 2013 about MUXCY and XORCY. Do you think it is wise to use this piece of a CLB in a circuit design project?*
+*Why do you think Xlinix still supports MUXCY (because we used it!), yet don't document it?* It can be useful to compute 1bit high speed carry functions.
 
-*What would you guess is the preferred entry method for a MUXCY .. if it existed in the Vivado 7 series library?*
+*Xilinix was the [first FPGA vendor](http://hardwarebee.com/list-fpga-companies/) to start shipping LUT6 FPGAs. Intel FPGAs come from purchasing Xilinx's major competitor for years .. and ships a LUT6. How does [Flex-Logix](http://www.flex-logix.com/6lut-faster-denser/) fit into this competition?* They are a copy of Xilinx trying so hard to be the same as them.
 
-*Why do you think Xlinix still supports MUXCY (because we used it!), yet don't document it?*
+*Why is this question important to you, the college, the market place?* It talks about the future of technology in logic designs and circuits.  
 
-*Xilinix was the [first FPGA vendor](http://hardwarebee.com/list-fpga-companies/) to start shipping LUT6 FPGAs. Intel FPGAs come from purchasing Xilinx's major competitor for years .. and ships a LUT6. How does [Flex-Logix](http://www.flex-logix.com/6lut-faster-denser/) fit into this competition?*
+*What does [Flex-Logix name it's equivalent](http://www.flex-logix.com/dsp-applications/) of LUT6?* It is called Gen 2 EFLX.
 
-*Why is this question important to you, the college, the market place?* 
+*Is the code on this [web site](http://www.flex-logix.com/dsp-applications/) verilog or it's competitor VHDL?* The code is in verilog.
 
-*What does [Flex-Logix name it's equivalent](http://www.flex-logix.com/dsp-applications/) of LUT6?*  
-
-*Is the code on this [web site](http://www.flex-logix.com/dsp-applications/) verilog or it's competitor VHDL?*
-
-*What class at HCC teaches you what a [FIR](http://www.flex-logix.com/dsp-applications/) is?* 
+*What class at HCC teaches you what a [FIR](http://www.flex-logix.com/dsp-applications/) is?* I think it is electric circuits 205.
 
 ## 2Decoder
 
 #### Port Diagram
+
+
 
 #### Verilog Code
 
