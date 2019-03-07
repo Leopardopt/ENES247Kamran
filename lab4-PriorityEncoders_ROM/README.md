@@ -72,40 +72,48 @@ ___
 
 *Is the code on this [web site](http://www.flex-logix.com/dsp-applications/) verilog or it's competitor VHDL?* The code is in verilog.
 
-*What class at HCC teaches you what a [FIR](http://www.flex-logix.com/dsp-applications/) is?* I think it is electric circuits 205.
+*What class at HCC teaches you what a [FIR](http://www.flex-logix.com/dsp-applications/) is?* It may be electric circuits-205.
 
 ## 2Decoder
 
 #### Port Diagram
 
-
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderPortD.PNG)
 
 #### Verilog Code
 
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderVerilog.PNG)
+
 #### RTL Schematic Screen shot
+
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderRTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderSynth.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderImplement.PNG)
 
 #### Testing
 
-
+The three inputs of x each have a different binary code which the LED outputs of y and z follow; x[0] will make the lights to move left by 1, x[1] will make lights to jump two points to left, x[2] will cause the lights to move left by a space of 4. z follows y and whatever the y seems to do, z will do the same on its side. Starting bright LEDs count as zero for the circuit.
 
 ___
 
-#### Prompts 
+#### Prompts
 
-*How many of the outputs of the Decoder are positive at any given instant in time?*
+*How many of the outputs of the Decoder are positive at any given instant in time?* Since it is a two output decoder, may have up to two positive at any time.
 
 *When the Decoder changes it's output, what happens among these choices:*
 
-1. *Do all outputs go to 0 before the next set of outputs are displayed?* 
-2. *Do the new 1(s) appear along with the previous 1(s) simultaneously?*
-3. *Does/Do the output(s) flicker in some unknown way based on impurities or differences in the fabric of the FPGA?*
-4. *Do we have the tools to figure out what the answer is?*	
+1. *Do all outputs go to 0 before the next set of outputs are displayed?*  No
+2. *Do the new 1(s) appear along with the previous 1(s) simultaneously?* Yes
+3. *Does/Do the output(s) flicker in some unknown way based on impurities or differences in the fabric of the FPGA?* No
+4. *Do we have the tools to figure out what the answer is?* Yes, it is based on the testing and verilog code	
 
-*Given the concept of an [infinitesimal](https://en.wikipedia.org/wiki/Infinitesimal), is it ever possible for two outputs, from any circuit to change simultaneously?*
+*Given the concept of an [infinitesimal](https://en.wikipedia.org/wiki/Infinitesimal), is it ever possible for two outputs, from any circuit to change simultaneously?* No, there is always a nano second difference between the best possible scenerio outputs displayed.
 
 
 
@@ -124,21 +132,31 @@ It is a tricky, logic problem. Look at the first two rows of the truth table bel
 
 ![img](table4.JPG)
 
-There four vivado projects. There are three different verilog expressions introduced. The first synthesizeable verilog code has been introduced. Do one port interface diagram. Do four Verilog code screen shots and four screen shots of everything else. The goal is to compare them.  Just describe how the three test below.
+There four vivado projects. There are three different Verilog expressions introduced. The first synthesizable Verilog code has been introduced. Do one port interface diagram. Do four Verilog code screen shots and four screen shots of everything else. The goal is to compare them.  Just describe how the three test below.
 
-#### Port Diagram
+#### Port Diagram (ALL THREE)
+
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderPortD.PNG)
 
 #### Verilog Code
 
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderVerilog.PNG)
+
 #### RTL Schematic Screen shot
+
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderRTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderSynthSchm.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderImplement.PNG)
 
 #### Testing
 
-
+The inputs of [7:0] D are all the switches which will change the lights to 3 different encoders within the verilog code. As for the Ygates and Vgate outputs, it is shown in the code that a certain D switches will turn them on/off when needed. As for the VdataFlow and YdataFlows, since the VdataFlow output is always on when the YdataFlows are off, when the D[7] switch is on, it will automatically turn off and change to YdataFlow LEDs which will continue to count high in binary code as shown in the verilog starting from left most switch to the right most. D[0] does not affect anything in this case. For last VoneHot and YoneHot outputs, ......????
 
 ---
 
