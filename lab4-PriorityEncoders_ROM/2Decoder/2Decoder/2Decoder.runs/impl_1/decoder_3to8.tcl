@@ -60,16 +60,13 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache C:/Users/kamra/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7300-MSI/incrSyn
   open_checkpoint decoder_3to8_routed.dcp
-  set_property webtalk.parent_dir C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/2Decoder/2Decoder/2Decoder.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/2Decoder/2Decoder/2Decoder.cache/wt [current_project]
   catch { write_mem_info -force decoder_3to8.mmi }
   write_bitstream -force decoder_3to8.bit 
   catch {write_debug_probes -quiet -force decoder_3to8}

@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/VivadoXilinx/SDK/2018.3/bin;D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/VivadoXilinx/Vivado/2018.3/bin
+  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin
 else
-  PATH=D:/VivadoXilinx/SDK/2018.3/bin;D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/VivadoXilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/VivadoXilinx/Vivado/2018.3/bin:$PATH
+  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/2Decoder/2Decoder/2Decoder.runs/synth_1'
+HD_PWD='C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/2Decoder/2Decoder/2Decoder.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

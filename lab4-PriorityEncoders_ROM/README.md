@@ -78,23 +78,23 @@ ___
 
 #### Port Diagram
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderPortD.PNG)
+![](DecoderPortD.PNG)
 
 #### Verilog Code
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderVerilog.PNG)
+![](DecoderVerilog.PNG)
 
 #### RTL Schematic Screen shot
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderRTL.PNG)
+![](DecoderRTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderSynth.PNG)
+![](DecoderSynth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\DecoderImplement.PNG)
+![](DecoderImplement.PNG)
 
 #### Testing
 
@@ -136,27 +136,27 @@ There four vivado projects. There are three different Verilog expressions introd
 
 #### Port Diagram (ALL THREE)
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderPortD.PNG)
+![](EncoderPortD.PNG)
 
 #### Verilog Code
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderVerilog.PNG)
+![](EncoderVerilog.PNG)
 
 #### RTL Schematic Screen shot
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderRTL.PNG)
+![](EncoderRTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderSynthSchm.PNG)
+![](EncoderSynthSchm.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-![](C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab4-PriorityEncoders_ROM\EncoderImplement.PNG)
+![](EncoderImplement.PNG)
 
 #### Testing
 
-The inputs of [7:0] D are all the switches which will change the lights to 3 different encoders within the verilog code. As for the Ygates and Vgate outputs, it is shown in the code that a certain D switches will turn them on/off when needed. As for the VdataFlow and YdataFlows, since the VdataFlow output is always on when the YdataFlows are off, when the D[7] switch is on, it will automatically turn off and change to YdataFlow LEDs which will continue to count high in binary code as shown in the verilog starting from left most switch to the right most. D[0] does not affect anything in this case. For last VoneHot and YoneHot outputs, ......????
+The inputs of [7:0] D are all the switches which will change the lights to 3 different encoders within the verilog code. As for the Ygates and Vgate outputs, it is shown in the code that a certain D[3:0] switches will turn them on/off when needed. As for the VdataFlow and YdataFlows, since the VdataFlow output is always on when the YdataFlows are off, when the D[7] switch is on, it will automatically turn off and change to YdataFlow LEDs which will continue to count high in binary code as shown in the verilog starting from left most switch to the right most. D[0] does not affect anything in this case. For last VoneHot and YoneHot outputs.
 
 ---
 
@@ -194,17 +194,23 @@ An alternative to if, if, if, if, if, ... if else is a case command. Both Case a
 
 #### Port Diagram
 
+![](ROMPortD.PNG)
+
 #### Verilog Code ![1549965418284](1549965418284.png)
 
 #### RTL Schematic Screen shot![1549965505259](1549965505259.png)
 
 #### Synthesis Schematic Screen shot
 
+![](ROMSynthSchm.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![](ROMImplement.PNG)
 
 #### Testing
 
-
+The ROM is dependent upon a behavior manual that tells it what to do. In this case, the four input switches a and b act as the binary digits for the 
 
 ___
 
@@ -239,26 +245,3 @@ Look at the .txt file.
 *What do the bits in the text file represent?*
 
 *A [Mips CPU](https://en.wikipedia.org/wiki/MIPS_architecture#Jump_and_branch) contains a circuit similar to this. When does the circuit execute?*  
-
-## 5ROMmultiply
-
-Your goal is to create a circuit that multiplies two bits together. Use the ROM. Create the text file. Create the code. Make it as RTL as possible. 
-
-#### Port Diagram
-
-#### Verilog Code
-
-#### RTL Schematic Screen shot
-
-#### Synthesis Schematic Screen shot
-
-#### Implementation Device screen shot zoomed in on something interesting
-
-#### Testing
-
- 
-
-___
-
-#### Prompts
-
