@@ -10,23 +10,23 @@ The  HexToBCD algorithm in the last lab worked for one hex group. The problem is
 
 #### Port Diagram
 
-![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\PortDiag1.PNG)
+![](PortDiag1.PNG)
 
 #### Verilog Code
 
-![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\decoder3_8Code.PNG)
+![](decoder3_8Code.PNG)
 
 #### RTL Schematic Screen shot
 
-![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\DecoderRTLSchem.PNG)
+![](DecoderRTLSchem.PNG)
 
 #### Synthesis Schematic Screen shot
 
-![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\Decoder1SynthSchem.PNG)
+![](Decoder1SynthSchem.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\Implement1.PNG)
+![](Implement1.PNG)
 
 #### Testing
 
@@ -40,7 +40,7 @@ This code tests the ability to count clock pulses and display 32 bits split into
 
 #### Port Diagram
 
-![](C:\Users\SET253-12U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab3-ReusableBCDhex7segDisplayCode\PortDiag2.PNG)
+![](PortDiag2.PNG)
 
 #### Verilog Code
 
@@ -67,10 +67,6 @@ Carry Logic Being used
 #### Testing
 
 3 Select bits select 1 of 8, 4 bit groups from a 32 bit constant and display on LEDs.  
-
-___
-
-#### Prompts
 
 ## 2_32bitBCDto16LEDs
 
@@ -154,12 +150,6 @@ This project is not yet finished. Please finish the documentation of it. It has 
 
 #### Testing
 
- 
-
-------
-
-#### Prompts
-
 ## 5_32bitsHexToBCDto7segAnd16LEDs
 
 Add your 32bitHextoBCD code to the above project. Replace any of the modules that you see with more attractive code. Add comments that make it easier to understand. 
@@ -167,6 +157,8 @@ Add your 32bitHextoBCD code to the above project. Replace any of the modules tha
 #### Port Diagram
 
 The SVG file called Port7Seg.svg can be uploaded to draw.io to edit. 
+
+![](32bitHex7segPortD.PNG)
 
 #### Verilog Code
 
@@ -177,9 +169,3 @@ The SVG file called Port7Seg.svg can be uploaded to draw.io to edit.
 #### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
-
- 
-
-------
-
-#### Prompts
