@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/4ROMpattern/4ROMpattern.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/4ROMpattern/4ROMpattern.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0e988aaf86c54ca883d44af975c676cc"/>
@@ -70,9 +70,11 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/4ROMpattern/ROM_16_3_behavior.txt">
-        <FileInfo>
+        <FileInfo SFType="BMM">
           <Attr Name="ImportPath" Val="$PPRDIR/ROM_16_3_behavior.txt"/>
           <Attr Name="ImportTime" Val="1548632293"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>

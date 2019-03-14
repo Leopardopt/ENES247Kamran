@@ -65,9 +65,11 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
   open_checkpoint rom_16_3_behavior_routed.dcp
-  set_property webtalk.parent_dir C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/4ROMpattern/4ROMpattern.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/4ROMpattern/4ROMpattern.cache/wt [current_project]
   catch { write_mem_info -force rom_16_3_behavior.mmi }
+  catch { write_bmm -force rom_16_3_behavior_bd.bmm }
   write_bitstream -force rom_16_3_behavior.bit 
   catch {write_debug_probes -quiet -force rom_16_3_behavior}
   catch {file copy -force rom_16_3_behavior.ltx debug_nets.ltx}

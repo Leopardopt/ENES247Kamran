@@ -162,33 +162,35 @@ The inputs of [7:0] D are all the switches which will change the lights to 3 dif
 
 #### Prompts
 
-*How is the gate verilog code different between AllThree and Gate?*
+*How is the gate verilog code different between AllThree and Gate?* It is in gate level coding.
 
-*The first synthesizable System Verilog commands have been introduced. How can you tell by the source verilog file extension?*  
+*The first synthesizable System Verilog commands have been introduced. How can you tell by the source verilog file extension?* It has a .sv extension meaning that it is synthesizable. 
 
-**Where in the verilog "new project sequence of steps" are you given the option of creating system verilog or just plane verilog?*
+**Where in the verilog "new project sequence of steps" are you given the option of creating system verilog or just plane verilog?* When it asks for the design folder to either create or put in from another document.
 
-*In what way does the DataFlow implementation use the if command?*
+*In what way does the DataFlow implementation use the if command?* It uses if command with the for loop when it is giving conditions to move through the loop for each counter, thus probably a latch.
 
-*In AllThree, why would always @* work ... in addition to always_combo?*
+*In AllThree, why would always @* work ... in addition to always_combo?* Always @ would be for a specific block of code when always_combo works on a different block with a combinations of variables and conditions.
 
-*In System Verilog, what are the other two always commands?*
+*In System Verilog, what are the other two always commands?* simple always and always_ff...
 
-*From a design point of view, which implementation of a priority encoder do you think Vivado expects engineers to ask it to implement?* 
+*From a design point of view, which implementation of a priority encoder do you think Vivado expects engineers to ask it to implement?*  It would most likely ask for data flow RTL verilog code.
 
-*Which implementation of a priority encoder looks like the easiest to spot and see within a much much larger chunk of verilog code?* 
+*Which implementation of a priority encoder looks like the easiest to spot and see within a much much larger chunk of verilog code?*  It would be the oneHot RTL code.
 
-*Which is probably the most sustainable (will be supported by vendors in the future, future engineers looking at the code will understand it)?*  
+*Which is probably the most sustainable (will be supported by vendors in the future, future engineers looking at the code will understand it)?*  It will be the data flow code.
 
-*Which will be the easiest to change/modify?*
+*Which will be the easiest to change/modify?* In my opinion it is the oneHot encoder.
 
-*We have been told that implementation within the FGPA doesn't matter from a net and leaf cell count point of view. We don't see obvious controls that specify where within the chip everything is implemented. (It looks like resources next to the switch and LED pads are being used constantly.) But real quick in the future, speed is going to matter. Which of these priority encoder looks like it will be the fastest?*
+*We have been told that implementation within the FGPA doesn't matter from a net and leaf cell count point of view. We don't see obvious controls that specify where within the chip everything is implemented. (It looks like resources next to the switch and LED pads are being used constantly.) But real quick in the future, speed is going to matter. Which of these priority encoder looks like it will be the fastest?* The faster one is the oneHot AGAIN!
 
-*Why is speed not important to us right now?*
+*Why is speed not important to us right now?* We are trying to learn how each type of code works.
 
-*Why is the for loop called [One-Hot](https://en.wikipedia.org/wiki/One-hot)?* 
+*Why is the for loop called [One-Hot](https://en.wikipedia.org/wiki/One-hot)?*  B/c it switches between the 1 bit high and other low LEDs. The table below gives a better information:
 
-An alternative to if, if, if, if, if, ... if else is a case command. Both Case and If else Case command syntax was part of verilog.  This is why it is called "data_path". *Why do you think the if if if ...if else command introduced with System Verilog?* 
+![](OneHot.PNG)
+
+An alternative to if, if, if, if, if, ... if else is a case command. Both Case and If else Case command syntax was part of verilog.  This is why it is called "data_path". *Why do you think the if if if ...if else command introduced with System Verilog?* It gets confusing and makes the hardware coding look alot like software such as c++ which is NOT good! These two are two different things.
 
 ## 4ROMpattern
 
@@ -196,13 +198,17 @@ An alternative to if, if, if, if, if, ... if else is a case command. Both Case a
 
 ![](ROMPortD.PNG)
 
-#### Verilog Code ![1549965418284](1549965418284.png)
+#### Verilog Code 
 
-#### RTL Schematic Screen shot![1549965505259](1549965505259.png)
+![](ROMVerilog.PNG)
+
+#### RTL Schematic Screen shot
+
+![1549965418284](1549965418284.png)
 
 #### Synthesis Schematic Screen shot
 
-![](ROMSynthSchm.PNG)
+![1549965505259](1549965505259.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
@@ -210,7 +216,7 @@ An alternative to if, if, if, if, if, ... if else is a case command. Both Case a
 
 #### Testing
 
-The ROM is dependent upon a behavior manual that tells it what to do. In this case, the four input switches a and b act as the binary digits for the 
+The ROM is dependent upon a behavior manual that tells it what to do. In this case, the four input switches a and b act according to the text sheet included within program following the behavior. Thus changing the text sheet outputs will change the way the LEDs light up which are the gt, lt, and eq which are basically data slots for the ROM output.
 
 ___
 
@@ -220,28 +226,58 @@ This program grabs data in a text file and puts it in ROM. There are several que
 
 ![1549963293335](1549963293335.png)
 
-Google found [this](https://forums.xilinx.com/t5/Synthesis/Pathnames-for-Verilog-readmem-Datafiles-for-synthesis-Warning/td-p/775824) in response to typing in the error message.  *How many solutions to the problem are in the Xilinx user forum post?* 
+Google found [this](https://forums.xilinx.com/t5/Synthesis/Pathnames-for-Verilog-readmem-Datafiles-for-synthesis-Warning/td-p/775824) in response to typing in the error message.  *How many solutions to the problem are in the Xilinx user forum post?* There is only one.
 
 *Describe the solution that works in words:* 
+
+Since it is data that is given to the circuit, the extension of the text sheet must have the following extension of .data which then allows the program to follow the text. And by return flow, the text will move the data into the program for it to be used as intended. That is when the verliog code will actually work.
 
 ![1549963883327](1549963883327.png)
 
 *When is the file read by vivado (RTL analysis, synthesis, implementation or bitstream? )*
 
+Synthesis is when the file is read by Vivado for the first time. 
+
 *What does this tell you about the file's sustainability (easy to identify, easy to modify, easy to find)?*
+
+Easy to modify.
 
 *After following the forum's post, what is the path to where the file actually lives?*
 
+The path is within the source_1, with .v extension file.
+
 *After synthesizing, where in a CLB do the contents of the text file go?* 
+
+They go into the data path of the circuit mainly inside the Lut.
 
 Look at the .txt file. 
 
-*How many bits per row?*
+*How many bits per row?* 3 bits per row
 
-*How many rows?* 
+*How many rows?* 16 rows
 
-*Why so many rows?*
+*Why so many rows?* It is made this way for the LUT4 to be able to process each output accordingly. 2^4 hence the LUT4.
 
-*What do the bits in the text file represent?*
+*What do the bits in the text file represent?*They are the number of binary outputs. 
 
 *A [Mips CPU](https://en.wikipedia.org/wiki/MIPS_architecture#Jump_and_branch) contains a circuit similar to this. When does the circuit execute?*  
+
+Then they should execute when the command is given to them to in form of inputs. (?)
+
+## 5ROMmultiply
+
+Your goal is to create a circuit that multiplies two bits together. Use the ROM. Create the text file. Create the code. Make it as RTL as possible. 
+
+#### Port Diagram
+
+
+
+#### Verilog Code
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing

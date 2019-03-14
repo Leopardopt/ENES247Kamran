@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/4ROMpattern/4ROMpattern.runs/impl_1'
+HD_PWD='C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/4ROMpattern/4ROMpattern.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
