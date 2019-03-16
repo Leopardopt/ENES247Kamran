@@ -270,14 +270,24 @@ Your goal is to create a circuit that multiplies two bits together. Use the ROM.
 
 #### Port Diagram
 
-
+![](ROMMultiplyPortD.PNG)
 
 #### Verilog Code
 
+![](ROMMultiplyVerilog.PNG)
+
 #### RTL Schematic Screen shot
+
+![](ROMMultiplyRTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
+![](ROMMultiplySynthSchem.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
 
+![](ROMMultiplyImplement.PNG)
+
 #### Testing
+
+There are four inputs each being two switches of a and b 0-1. By moving these switches, you are moving two hex number switches which will be multiplied and given the result as LEDs in the gt, lt, ca, and eq outputs. It is in binary which can be translated into hex and a truth table was made from the behavior that it is following based on the text sheet in the notebook.

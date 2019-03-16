@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/4ROMpattern/4ROMpattern.srcs/constrs_1/imports/4ROMpattern/Nexys4DDR_Master.xdc rfile:../../../4ROMpattern.srcs/constrs_1/imports/4ROMpattern/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab4-PriorityEncoders_ROM/4ROMpattern/4ROMpattern.srcs/constrs_1/imports/4ROMpattern/Nexys4DDR_Master.xdc rfile:../../../4ROMpattern.srcs/constrs_1/imports/4ROMpattern/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { b[0] }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
@@ -13,3 +13,5 @@ set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN K15   IOSTANDARD LVCMOS33 } [get_ports { gt }]; #IO_L24P_T3_RS1_15 Sch=led[1]
 set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J13   IOSTANDARD LVCMOS33 } [get_ports { lt }]; #IO_L17N_T2_A25_15 Sch=led[2]
+set_property src_info {type:XDC file:1 line:36 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN N14   IOSTANDARD LVCMOS33 } [get_ports { ca }]; #IO_L8P_T1_D11_14 Sch=led[3]
