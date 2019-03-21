@@ -11,14 +11,35 @@ The major take away from this lab is using the tb_bench and understanding what a
 
 ------
 
-**Lab 5_101**
+# **Lab 5_101**
 
-**RTL Schematic:**
+### **RTL Schematic:**
 
 ![](SRLatchDataflowRTL.PNG)
 
 
 
-**Something Interesting During Implementation:**
+### **Something Interesting During Implementation:**
 
 ![](SRLatchDataflowImplementation.PNG)
+
+### **Testing:**
+
+The circuit has two inputs of S and R and two outputs of Q and Q'. The following table describes the behavior which the inputs make the outputs to follow in this SR latch: (Latch means no change!)
+
+01 is reset, 10 is set, and 00 is illogical result... 
+
+![](SRLATCHBehavior.PNG)
+
+# Lab 5_102
+
+### RTL Schematic:
+
+![](SRLatchGateRTL.PNG)
+
+### Something Interesting During Implementation:
+
+![](SRLatchGateImplement.PNG)
+
+### Testing:
+
