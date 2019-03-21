@@ -19,7 +19,11 @@ The major take away from this lab is using the tb_bench and understanding what a
 
 
 
-### **Something Interesting During Implementation:**
+### Verilog Code:
+
+![](SRLatchVerilog.PNG)
+
+### Something Interesting During Implementation:
 
 ![](SRLatchDataflowImplementation.PNG)
 
@@ -30,6 +34,10 @@ The circuit has two inputs of S and R and two outputs of Q and Q'. The following
 01 is reset, 10 is set, and 00 is illogical result... 
 
 ![](SRLATCHBehavior.PNG)
+
+### Simulation Behavior:
+
+![](SRLatchBehavioral.PNG)
 
 # Lab 5_102
 
@@ -42,4 +50,40 @@ The circuit has two inputs of S and R and two outputs of Q and Q'. The following
 ![](SRLatchGateImplement.PNG)
 
 ### Testing:
+
+There are three inputs of S,R, and Enable. The Enable is mainly to turn on the circuit processing. S responds to Q and R responds to Q' outputs when turned on with Enable. Both together will result in no result b/c of it being illogical and  none on will result in a remember state where the circuit stays on the output shown from before.
+
+### Verilog Code:
+
+![](SRLatchGateVerilog.PNG)
+
+### Simulation Behavior:
+
+![](SRLatchGateBehavior.PNG)
+
+As it is shown, both of the graphs from lab 101 and 102 are the same meaning that with or without switch, there is not much difference in the behavior. As shown, the Q, Q' are red at the start showing the delay of the circuit to the point of 30ns to give out an output, I think.
+
+# Lab 5_103
+
+### RTL Schematic:
+
+![](DLatchRTL.PNG)
+
+### Something Interesting During Implementation:
+
+![](DLatchImplement.PNG)
+
+### Testing:
+
+There are two inputs of D and Enable. There are also two outputs of Q and Q' corresponding to the inputs. The behavior of the D-ff will look something like this:
+
+​                                  ![](DLatchBehavior.PNG)
+
+
+
+### Verilog Code:
+
+
+
+### Simulation Behavior:
 
