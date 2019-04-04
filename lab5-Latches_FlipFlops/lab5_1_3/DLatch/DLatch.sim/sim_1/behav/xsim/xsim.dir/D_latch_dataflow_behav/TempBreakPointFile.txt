@@ -1,0 +1,7 @@
+Breakpoint File Version 1.0
+13 true C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab5-Latches_FlipFlops/lab5_1_3/D_latch_dataflow.v
+14 true C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab5-Latches_FlipFlops/lab5_1_3/D_latch_dataflow.v
+15 true C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab5-Latches_FlipFlops/lab5_1_3/D_latch_dataflow.v
+16 true C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab5-Latches_FlipFlops/lab5_1_3/D_latch_dataflow.v
+17 true C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab5-Latches_FlipFlops/lab5_1_3/D_latch_dataflow.v
+18 true C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab5-Latches_FlipFlops/lab5_1_3/D_latch_dataflow.v

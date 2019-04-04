@@ -83,7 +83,116 @@ There are two inputs of D and Enable. There are also two outputs of Q and Q' cor
 
 ### Verilog Code:
 
+![](DLatchVerilog.PNG)
 
+# Lab 5-201
+
+### RTL Schematic:
+
+![](DFFCLOCKRTL.PNG)
+
+### Synthesis:
+
+![](DFFCLOCKSynth.PNG)
+
+### Something Interesting During Implementation:
+
+![](DFFCLOCKImplement.PNG)
+
+### Verilog Code:
+
+![](DFFCLOCKVerilog.PNG)
+
+### Testing:
+
+There are two inputs of Clk and D which represent a D-ff with only one output of Q. The LED Q will turn on only if the clock is switched on after the D switch is on. When D switch is down, clock will turn the Q off if switched on.
 
 ### Simulation Behavior:
 
+![](DFFCLOCKBehavior.PNG)
+
+The red spot at the start may present the time that it takes for output Q to catch up with the inputs.
+
+# Lab 5-202
+
+### RTL Schematic:
+
+![](DFF202RTL.PNG)
+
+### Something Interesting During Implementation:
+
+![](DFF202Implement.PNG)
+
+Showing the three output reg shown above.
+
+### Verilog Code:
+
+![](DFF202Verilog.PNG)
+
+### Testing:
+
+Circuit has two inputs of D and Clock same as before. Outputs are Qa, Qb, and Qc which are individually changed by the switch of the D and Clock accordingly. Qa will turn on when D and Clock are on, Qb will turn on when D and Clock are on but then D is turned off. Qc will turn on when D and Clock are on, and D stays on but clock is turned off. Same as the following behavior:
+
+![](DFF202Behavior.PNG)
+
+# Lab 5-203
+
+### RTL Schematic:
+
+![](DFFSynchResRTL.PNG)
+
+### Something Interesting During Implementation:
+
+![](DFFSynchResImplement.PNG)
+
+### Verilog Code:
+
+![](DFFSynchResVerilog.PNG)
+
+### Testing:
+
+The Q output will turn on when the two inputs of D and Clk are turned on and turns off when reset is on and Clk is turned off and on again (To register the synchronous reset). The circuit follows the behavioral table below:
+
+![](DFFSynchResBehavior.PNG)
+
+# Lab 5-204
+
+### RTL Schematic:
+
+![](DFFCLOCKEnableRTL.PNG)
+
+### Something Interesting During Implementation:
+
+![](DFFCLOCKEnableImplement.PNG)
+
+### Verilog Code:
+
+![](DFFCLOCKEnableVerilog.PNG)
+
+### Testing:
+
+There are 4 inputs: CLK,D, ce, and reset. Reset mainly resets the process with change of a clock. D and Clk act as the ones that turn on Q output and **CE enables the clock to function normally** meaning without it, clock won't function at all. The behavior below shows in detail what the Q will be at each point:
+
+![](DFFCLOCKEnableBehavior.PNG)
+
+# Lab 5-205
+
+### RTL Schematic:
+
+![](TFFRTL.PNG)
+
+### Something Interesting During Implementation:
+
+![](TFFImplement.PNG)
+
+### Verilog Code:
+
+![](TFFVerilog.PNG)
+
+### Testing:
+
+There are three inputs of CLK, reset, and T with Q as the only register output. Based on code, when T and Clk are on, nothing will happen. However, when reset is turned on with Clk turning off and on, Q will be on, because it is toggled on and when T is off, with reset on, changing Clk won't turn off the Q. 
+
+### Prompts
+
+***Questions asked and answered in Journal concerning each part of the lab***
