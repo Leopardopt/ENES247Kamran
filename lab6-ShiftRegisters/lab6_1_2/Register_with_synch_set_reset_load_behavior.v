@@ -6,7 +6,7 @@
 module Register_with_synch_set_reset_load_behavior(
     input Clk,
     input [3:0] D,
-    input set,
+    input set1,
     input reset,
     input load,
     output reg [3:0] Q
@@ -15,7 +15,7 @@ module Register_with_synch_set_reset_load_behavior(
    always @(posedge Clk)
    if (reset) 
       Q <= 4'b0;
-   else if (set)
+   else if (set1)
      Q <= 4'b1111;
    else if (load)
      Q <= D;

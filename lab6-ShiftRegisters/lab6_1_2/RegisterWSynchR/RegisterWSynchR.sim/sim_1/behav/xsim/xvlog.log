@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_1_2/Register_with_synch_set_reset_load_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_with_synch_set_reset_load_behavior
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_1_2/RegisterWSynchR/RegisterWSynchR.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
