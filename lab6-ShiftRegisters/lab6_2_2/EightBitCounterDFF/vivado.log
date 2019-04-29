@@ -2,41 +2,78 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Apr 29 09:37:59 2019
-# Process ID: 10488
-# Current directory: C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11160 C:\Users\SET165-04U\Documents\GitHub\ENES247Kamran\lab6-ShiftRegisters\lab6_2_2\EightBitCounterDFF\EightBitCounterDFF.xpr
-# Log file: C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/vivado.log
-# Journal file: C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF\vivado.jou
+# Start of session at: Mon Apr 29 18:32:07 2019
+# Process ID: 2172
+# Current directory: C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5276 C:\Users\SET165-01U\Documents\GitHub\ENES247Kamran\lab6-ShiftRegisters\lab6_2_2\EightBitCounterDFF\EightBitCounterDFF.xpr
+# Log file: C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/vivado.log
+# Journal file: C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.xpr
+open_project C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.xpr
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF'
+Current project path is 'C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF'
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 722.887 ; gain = 126.621
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 724.910 ; gain = 130.547
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Apr 29 09:39:38 2019] Launched synth_1...
-Run output will be captured here: C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Apr 29 09:39:56 2019] Launched synth_1...
-Run output will be captured here: C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 4
-[Mon Apr 29 09:40:32 2019] Launched impl_1...
-Run output will be captured here: C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Apr 29 09:41:56 2019] Launched impl_1...
-Run output will be captured here: C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Eight_bit_counter_with_D_flop_behave
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 997.641 ; gain = 64.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Eight_bit_counter_with_D_flop_behave' [C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/Eight_bit_counter_with_D_flop_behavior.v:6]
+INFO: [Synth 8-6157] synthesizing module 'T_ff_D_ff_enable_behavior' [C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/T_ff_with_D_ff_enable_behavior.v:6]
+INFO: [Synth 8-6157] synthesizing module 'D_ff_sync_reset_behavior' [C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/D_ff_sync_reset_behavior.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'D_ff_sync_reset_behavior' (1#1) [C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/D_ff_sync_reset_behavior.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'T_ff_D_ff_enable_behavior' (2#1) [C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/T_ff_with_D_ff_enable_behavior.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Eight_bit_counter_with_D_flop_behave' (3#1) [C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/Eight_bit_counter_with_D_flop_behavior.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 997.641 ; gain = 64.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 997.641 ; gain = 64.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 997.641 ; gain = 64.656
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1181.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1252.340 ; gain = 319.355
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1252.340 ; gain = 319.355
+close_design
 open_run impl_1
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Timing 38-478] Restoring timing data from binary archive.
 INFO: [Timing 38-479] Binary timing data restore complete.
@@ -45,14 +82,81 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1590.164 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1702.777 ; gain = 0.000
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1590.164 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1590.164 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1702.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1702.777 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1705.828 ; gain = 897.223
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1784.273 ; gain = 529.840
 WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Eight_bit_counter_with_D_flop_behave' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Eight_bit_counter_with_D_flop_behave_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/D_ff_sync_reset_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_ff_sync_reset_behavior
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/T_ff_with_D_ff_enable_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module T_ff_D_ff_enable_behavior
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/Eight_bit_counter_with_D_flop_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Eight_bit_counter_with_D_flop_behave
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto bcb861d1e5f84e8eaa51558891d3b0e8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Eight_bit_counter_with_D_flop_behave_behav xil_defaultlib.Eight_bit_counter_with_D_flop_behave xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.D_ff_sync_reset_behavior
+Compiling module xil_defaultlib.T_ff_D_ff_enable_behavior
+Compiling module xil_defaultlib.Eight_bit_counter_with_D_flop_be...
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Eight_bit_counter_with_D_flop_behave_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.sim/sim_1/behav/xsim/xsim.dir/Eight_bit_counter_with_D_flop_behave_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.sim/sim_1/behav/xsim/xsim.dir/Eight_bit_counter_with_D_flop_behave_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Apr 29 18:38:29 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 29 18:38:29 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1860.324 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Eight_bit_counter_with_D_flop_behave_behav -key {Behavioral:sim_1:Functional:Eight_bit_counter_with_D_flop_behave} -tclbatch {Eight_bit_counter_with_D_flop_behave.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Eight_bit_counter_with_D_flop_behave.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Eight_bit_counter_with_D_flop_behave_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1873.980 ; gain = 13.656
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1921.637 ; gain = 1.582
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 09:43:18 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 18:47:20 2019...

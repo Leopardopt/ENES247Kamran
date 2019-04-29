@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET165-04U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.runs/synth_1'
+HD_PWD='C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log T_ff_D_ff_enable_behavior.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source T_ff_D_ff_enable_behavior.tcl
+EAStep vivado -log Eight_bit_counter_with_D_flop_behave.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Eight_bit_counter_with_D_flop_behave.tcl

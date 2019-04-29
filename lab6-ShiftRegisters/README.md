@@ -90,18 +90,92 @@ clock ticks will turn off all LEDs. Otherwise, ShiftIn will enable the LEDs to t
 
 ### RTL Schematic:
 
-![]()
+![](ParallelOutRTL.PNG)
 
 ### Something Interesting About Implementation:
 
-![]()
+![](ParallelOutImplement.PNG)
 
 ### Verilog:
 
-![]()
+### ![](ParallelOutVerilog.PNG)
+
+### Testing:
+
+There are 3 inputs, Clk, ShiftIn, & ShiftEn. The two outputs are ShiftOut and [3:0] ParallelOut. The  circuit functions only when ShiftEnb is on, then, with ShiftIn on, each flip of Clk will turn on lights from right to left until the last one which also turns on ShiftOut. Then, nothing will happen until ShiftIn is off and Clk is flipped on and off again to off the lights one by one.
+
+
+
+# Lab 6-201
+
+### RTL Schematic:
+
+![](Lab103RTL.PNG)
+
+### Something Interesting About Implementation:
+
+![](EightBitImplement.PNG)
+
+### Verilog:
+
+![](EightBitVerilog2.PNG)
+
+![](EightBitVerilog1.PNG)
 
 ### Behavior:
 
-![]()
+![](EightBitBehavior.PNG)
 
 ### Testing:
+
+There are 3 inputs; Clear_n,Enable, and Clock. Outputs are [7:0] Q and will turn on with the process below:
+
+Nothing works without Enable, thus when on, Clear_n can be turned on and with flips of Clock, count up the binary numbers until 8 bit binary. It will reset when Clear_n is off and Clock is flipped on and off.
+
+# Lab 6-202
+
+### RTL Schematic:
+
+![](EightCounterDRTL.PNG)
+
+### Something Interesting About Implementation:
+
+![](EightCounterDImplement.PNG)
+
+### Verilog:
+
+![](EightCounterDVerilog1.PNG)
+
+![](EightCounterDVerilog2.PNG)
+
+![](EightCounterDVerilog3.PNG)
+
+### Behavior:
+
+![](EightCounterDBehavior.PNG)
+
+### Testing:
+
+The process is exactly the same as the circuit before with 8bit counter T-FF with the difference that LEDs turn on when Clock is on. 
+
+# Lab 6-203
+
+### RTL Schematic:
+
+![](FourBitRTL.PNG)
+
+### Something Interesting About Implementation:
+
+![](FourBitImplement.PNG)
+
+### Verilog:
+
+![](FourBitVerilog.PNG)
+
+### Behavior:
+
+![](FourBitBehavior.PNG)
+
+### Testing:
+
+There are 4 inputs of Clock, Clear, Load, & Enable. The output is still [3:0]Q. The circuit won't work with Enable off. When on, flipping clock on and off will count down from "1010" mentioned in the code down to zero in binary. Once Clear is on, every LED will turn off with flip of clock. Load resets the counter from the start with Clock flip. 

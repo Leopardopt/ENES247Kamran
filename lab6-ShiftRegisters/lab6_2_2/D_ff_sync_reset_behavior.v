@@ -7,7 +7,7 @@ module D_ff_sync_reset_behavior(
     input Clk,
     input D,
     input reset,
-    output reg [7:0]Q
+    output reg Q
     );
     
        always @(posedge Clk)

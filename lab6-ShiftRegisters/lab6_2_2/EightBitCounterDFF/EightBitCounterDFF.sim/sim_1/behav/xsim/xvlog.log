@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/D_ff_sync_reset_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_ff_sync_reset_behavior
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/T_ff_with_D_ff_enable_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module T_ff_D_ff_enable_behavior
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/Eight_bit_counter_with_D_flop_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Eight_bit_counter_with_D_flop_behave

@@ -3,7 +3,7 @@
 // Module Name: T_ff_enable_behavior
 //////////////////////////////////////////////////////////////////////////////////
 
-module T_ff_D_ff_enable_behavior(input Clk, input reset_n, input T, output [7:0]Q);
+module T_ff_D_ff_enable_behavior(input Clk, input reset_n, input T, output Q);
 
 	wire reset, D;
 	assign reset=~reset_n;

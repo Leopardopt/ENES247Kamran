@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr 29 18:00:07 2019
+# Process ID: 12656
+# Current directory: C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3532 C:\Users\SET165-01U\Documents\GitHub\ENES247Kamran\lab6-ShiftRegisters\lab6_2_2\EightBitCounterDFF\EightBitCounterDFF.xpr
+# Log file: C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/vivado.log
+# Journal file: C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.xpr
+update_compile_order -fileset sources_1
+set_property used_in_implementation false [get_files  C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_3/Four_bit_down_counter_with_load_enable_behavior_tb.v]
+set_property used_in_synthesis false [get_files  C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_3/Four_bit_down_counter_with_load_enable_behavior_tb.v]
+launch_simulation
+source T_ff_D_ff_enable_behavior.tcl
+set_property is_enabled false [get_files  C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/D_ff_sync_reset_behavior.v]
+set_property is_enabled true [get_files  C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/D_ff_sync_reset_behavior.v]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source T_ff_D_ff_enable_behavior.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+add_files -norecurse C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/Eight_bit_counter_with_D_flop_behavior.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.runs/impl_1/Eight_bit_counter_with_D_flop_behave.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_2_2/EightBitCounterDFF/EightBitCounterDFF.runs/impl_1/Eight_bit_counter_with_D_flop_behave.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

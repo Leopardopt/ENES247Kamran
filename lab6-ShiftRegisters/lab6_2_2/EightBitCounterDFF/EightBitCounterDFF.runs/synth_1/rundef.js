@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log T_ff_D_ff_enable_behavior.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source T_ff_D_ff_enable_behavior.tcl" );
+         "-log Eight_bit_counter_with_D_flop_behave.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Eight_bit_counter_with_D_flop_behave.tcl" );
 
 
 
