@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  2 15:37:40 2019
+# Process ID: 9712
+# Current directory: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab7-Behavioral-Modeling/lab7_1_5/Counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9824 C:\Users\SET253-07U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab7-Behavioral-Modeling\lab7_1_5\Counter\Counter.xpr
+# Log file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab7-Behavioral-Modeling/lab7_1_5/Counter/vivado.log
+# Journal file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab7-Behavioral-Modeling/lab7_1_5/Counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab7-Behavioral-Modeling/lab7_1_5/Counter/Counter.xpr
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type timing
+launch_simulation
+source specific_counter_case_tb.tcl
+close_sim
+launch_simulation
+source specific_counter_case_tb.tcl
+open_run impl_1
+close_sim
+launch_simulation
+source specific_counter_case_tb.tcl
