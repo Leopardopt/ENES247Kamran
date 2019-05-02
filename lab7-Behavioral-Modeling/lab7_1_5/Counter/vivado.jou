@@ -22,3 +22,4 @@ open_run impl_1
 close_sim
 launch_simulation
 source specific_counter_case_tb.tcl
+close_sim

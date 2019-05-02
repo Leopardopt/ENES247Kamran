@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_1_5/SerialParallelOut/SerialParallelOut.runs/synth_1'
+HD_PWD='C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_1_5/SerialParallelOut/SerialParallelOut.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "write_bitstream", "begin" );
+ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
          "-log Serial_in_parallel_out_enable_behavior.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Serial_in_parallel_out_enable_behavior.tcl -notrace" );
 

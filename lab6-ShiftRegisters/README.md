@@ -110,7 +110,7 @@ There are 3 inputs, Clk, ShiftIn, & ShiftEn. The two outputs are ShiftOut and [3
 
 ### RTL Schematic:
 
-![](Lab103RTL.PNG)
+![](EightBitRTL.PNG)
 
 ### Something Interesting About Implementation:
 
@@ -136,7 +136,7 @@ Nothing works without Enable, thus when on, Clear_n can be turned on and with fl
 
 ### RTL Schematic:
 
-![](EightCounterDRTL.PNG)
+![](Lab103RTL.PNG)
 
 ### Something Interesting About Implementation:
 

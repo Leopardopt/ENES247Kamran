@@ -1,0 +1,24 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+enable=0, reset=0, count=xxx at time=               10000
+enable=1, reset=0, count=xxx at time=               15000
+enable=1, reset=0, count=000 at time=               25000
+enable=1, reset=0, count=001 at time=               35000
+enable=1, reset=0, count=011 at time=               45000
+enable=1, reset=0, count=101 at time=               55000
+enable=1, reset=0, count=111 at time=               65000
+enable=1, reset=0, count=010 at time=               75000
+enable=1, reset=1, count=000 at time=               85000
+enable=1, reset=1, count=000 at time=               95000
+enable=1, reset=1, count=000 at time=              105000
+enable=0, reset=0, count=000 at time=              115000
+enable=0, reset=0, count=000 at time=              125000
+enable=0, reset=0, count=000 at time=              135000
+enable=1, reset=0, count=001 at time=              145000
+enable=1, reset=0, count=011 at time=              155000
+enable=1, reset=0, count=101 at time=              165000
+enable=1, reset=0, count=111 at time=              175000
+enable=1, reset=0, count=010 at time=              185000
+enable=1, reset=0, count=000 at time=              195000
+enable=1, reset=0, count=001 at time=              205000
+Simulation Done

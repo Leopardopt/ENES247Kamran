@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET165-01U/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_1_5/SerialParallelOut/SerialParallelOut.runs/impl_1'
+HD_PWD='C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab6-ShiftRegisters/lab6_1_5/SerialParallelOut/SerialParallelOut.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log Serial_in_parallel_out_enable_behavior.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Serial_in_parallel_out_enable_behavior.tcl -notrace
 
 
