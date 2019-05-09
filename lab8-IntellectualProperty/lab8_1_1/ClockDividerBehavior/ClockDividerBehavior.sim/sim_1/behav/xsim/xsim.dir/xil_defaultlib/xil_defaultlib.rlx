@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_1_1/ClockDividerBehavior/ClockDividerBehavior.sim/sim_1/behav/xsim/glbl.v,1544155482,verilog,,,,glbl,,,,,,,,
+C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_1_1/ClockDividerBehavior/ClockDividerBehavior.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1557419369,verilog,,C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_1_1/clk_divider_behavior.v,,clk_wiz_0,,,../../../../ClockDividerBehavior.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_1_1/ClockDividerBehavior/ClockDividerBehavior.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1557419369,verilog,,C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_1_1/ClockDividerBehavior/ClockDividerBehavior.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../ClockDividerBehavior.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_1_1/clk_divider_behavior.v,1557418832,verilog,,C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_1_1/one_second_clock_behavior.v,,clk_divider_behavior,,,../../../../ClockDividerBehavior.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_1_1/one_second_clock_behavior.v,1557419396,verilog,,,,one_second_clock_behavior,,,../../../../ClockDividerBehavior.srcs/sources_1/ip/clk_wiz_0,,,,,

@@ -18,11 +18,11 @@ module two_digits_counter_on_2_7segment_display(
 	
 	wire [7:0] an;
 
-	clk_5MHz U1 (.clk_in1(clkin), .clk_out1(Clk), .locked(locked));     
+	clk_wiz_0 U1 (.clk_in1(clkin), .clk_out1(Clk), .locked(locked));     
 	clk_divider_1hz_behavior U2 (.Clk(Clk), .reset(0), .enable(enable), .Q(clk_1hz));
 	// set the restrict count to 9 and sync threshold output to 9 in the IP generator
-	four_bit_counter_fabric U3 (.CLK(clk_1hz), .CE(enable), .SCLR(reset), .THRESH0(thresh0), .Q(m_lsn));
-	four_bit_counter_fabric U4 (.CLK(clk_1hz), .CE(thresh0), .SCLR(reset), .Q(m_msn));
+	c_counter_binary_0 U3 (.CLK(clk_1hz), .CE(enable), .SCLR(reset), .THRESH0(thresh0), .Q(m_lsn));
+	c_counter_binary_1 U4 (.CLK(clk_1hz), .CE(thresh0), .SCLR(reset), .Q(m_msn));
 	clk_divider_about_500hz_refresh_rate_2display U7(.Clk(Clk), .reset(reset), .an(an));
 	two_bcd_2_7segment_display U8(.lsn(m_lsn), .msn(m_msn), .an(an[3:0]), .seg(seg));
 
