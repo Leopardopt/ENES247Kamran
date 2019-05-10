@@ -2,13 +2,13 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu May  9 15:50:38 2019
-# Process ID: 13108
-# Current directory: C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_2_1/Counter
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5072 C:\Users\SET253-15U.HCCMAIN\Documents\GitHub\ENES247Kamran\lab8-IntellectualProperty\lab8_2_1\Counter\Counter.xpr
-# Log file: C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_2_1/Counter/vivado.log
-# Journal file: C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_2_1/Counter\vivado.jou
+# Start of session at: Fri May 10 16:25:26 2019
+# Process ID: 21912
+# Current directory: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_2_1/Counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23376 C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab8-IntellectualProperty\lab8_2_1\Counter\Counter.xpr
+# Log file: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_2_1/Counter/vivado.log
+# Journal file: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_2_1/Counter\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_2_1/Counter/Counter.xpr
+open_project C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab8-IntellectualProperty/lab8_2_1/Counter/Counter.xpr
 update_compile_order -fileset sources_1

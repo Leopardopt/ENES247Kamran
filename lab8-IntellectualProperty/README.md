@@ -59,3 +59,5 @@ There are 5 inputs of V[3:0] & reset. The outputs are the 7 segment display comp
 ### Test:
 
 The inputs are only reset and enable. Clock is there as a signal activated only when enable is on. Reset turns the counter value on 7 seg display(output) to '00' when the enable is on. It is designed to count up to 99 because both values are set to 9 and when right digit gets close to 10, the second digit takes it to turn that to 0 and changes itself to one value higher. The program  uses the catalog of FPGA in vivado for 5MHz clock and two binary counters set to Threshold of 9 and Final Count Value of 9. 
+
+500MHz signal turns into 1Hz to be more accurate while displaying the digits over each second. 2 of the anodes in the code are used only for the 2 digits being displayed on the circuit.
