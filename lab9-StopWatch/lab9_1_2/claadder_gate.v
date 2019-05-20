@@ -12,7 +12,6 @@ module claadder_gate(
     );
         
 	wire [3:0] p, g, cout_i;
-
 	assign cout = cout_i[3];
 
 	fulladder_with_pg_gate F0 (.a(a[0]), .b(b[0]), .cin(cin), .p(p[0]), .g(g[0]), .s(s[0]));

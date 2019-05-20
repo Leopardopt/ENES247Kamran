@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri May 10 17:33:16 2019
-# Process ID: 13544
+# Start of session at: Sun May 19 20:24:13 2019
+# Process ID: 21456
 # Current directory: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16532 C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab9-StopWatch\lab9_1_1\CarryLookAheadAdder\CarryLookAheadAdder.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10000 C:\Users\kamra\OneDrive\Documents\GitHub\ENES247Kamran\lab9-StopWatch\lab9_1_1\CarryLookAheadAdder\CarryLookAheadAdder.xpr
 # Log file: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/vivado.log
 # Journal file: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder\vivado.jou
 #-----------------------------------------------------------
@@ -20,7 +20,258 @@ WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VivadoXilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 676.684 ; gain = 78.402
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 675.578 ; gain = 70.879
 update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'claadder_gate_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj claadder_gate_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/cla_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/claadder_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module claadder_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder_with_pg_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/claadder_gate_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module claadder_gate_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/VivadoXilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 70ab43f52b004de585cd3852747dbd02 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot claadder_gate_tb_behav xil_defaultlib.claadder_gate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fulladder_with_pg_gate(AND_DELAY...
+Compiling module xil_defaultlib.cla_gate(AND_DELAY=3,OR_DELAY=3,...
+Compiling module xil_defaultlib.claadder_gate
+Compiling module xil_defaultlib.claadder_gate_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot claadder_gate_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.sim/sim_1/behav/xsim/xsim.dir/claadder_gate_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.sim/sim_1/behav/xsim/xsim.dir/claadder_gate_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun May 19 20:26:12 2019. For additional details about this file, please refer to the WebTalk help file at D:/VivadoXilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun May 19 20:26:12 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 687.613 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "claadder_gate_tb_behav -key {Behavioral:sim_1:Functional:claadder_gate_tb} -tclbatch {claadder_gate_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source claadder_gate_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+a=4, b=a, cin=0, expected s=e, count=0, got s=e, count=0, at time=               30000
+a=5, b=9, cin=0, expected s=e, count=0, got s=e, count=0, at time=               60000
+a=7, b=7, cin=0, expected s=e, count=0, got s=e, count=0, at time=               90000
+a=a, b=4, cin=0, expected s=e, count=0, got s=e, count=0, at time=              120000
+a=e, b=0, cin=0, expected s=e, count=0, got s=e, count=0, at time=              150000
+a=8, b=3, cin=1, expected s=c, count=0, got s=c, count=0, at time=              180000
+a=6, b=5, cin=1, expected s=c, count=0, got s=c, count=0, at time=              210000
+a=3, b=8, cin=1, expected s=c, count=0, got s=c, count=0, at time=              240000
+a=f, b=c, cin=1, expected s=c, count=1, got s=c, count=1, at time=              270000
+Simulation Done
+Test Passed
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'claadder_gate_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 713.543 ; gain = 25.930
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: claadder_gate
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 981.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'claadder_gate' [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/claadder_gate.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fulladder_with_pg_gate' [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v:6]
+	Parameter AND_DELAY bound to: 3 - type: integer 
+	Parameter OR_DELAY bound to: 3 - type: integer 
+	Parameter XOR_DELAY bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fulladder_with_pg_gate' (1#1) [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cla_gate' [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/cla_gate.v:6]
+	Parameter AND_DELAY bound to: 3 - type: integer 
+	Parameter OR_DELAY bound to: 3 - type: integer 
+	Parameter XOR_DELAY bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cla_gate' (2#1) [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/cla_gate.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'claadder_gate' (3#1) [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/claadder_gate.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 981.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 981.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 981.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1243.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1277.363 ; gain = 295.609
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1277.363 ; gain = 295.609
+launch_runs synth_1 -jobs 12
+[Sun May 19 21:02:42 2019] Launched synth_1...
+Run output will be captured here: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Sun May 19 21:03:26 2019] Launched impl_1...
+Run output will be captured here: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sun May 19 21:04:46 2019] Launched impl_1...
+Run output will be captured here: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1327.480 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBD5A
+set_property PROGRAM.FILE {C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.runs/impl_1/claadder_gate.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.runs/impl_1/claadder_gate.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2906.656 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2906.656 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2906.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2981.398 ; gain = 683.723
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3025.543 ; gain = 0.000
+close_project
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_1/CarryLookAheadAdder/CarryLookAheadAdder.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun May 19 22:06:12 2019. For additional details about this file, please refer to the WebTalk help file at D:/VivadoXilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun May 19 22:06:12 2019...
+create_project CarryLookahead2 C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2 -part xc7a100tcsg324-1
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VivadoXilinx/Vivado/2018.3/data/ip'.
+add_files -norecurse {C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/cla_gate.v C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/claadder_gate.v C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/fulladder_with_pg_gate.v}
+add_files -fileset sim_1 -norecurse C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/claadder_gate_tb.v
+add_files -fileset constrs_1 -norecurse C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_2_1/Nexys4DDR_Master.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_2_1/Nexys4DDR_Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_2_1/Nexys4DDR_Master.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/Nexys4DDR_Master.xdc
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2/CarryLookahead2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'claadder_gate_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2/CarryLookahead2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj claadder_gate_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/cla_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/claadder_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module claadder_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/fulladder_with_pg_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder_with_pg_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/claadder_gate_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module claadder_gate_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2/CarryLookahead2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2/CarryLookahead2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/VivadoXilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ef50d6c1c82848f898243597fc48e7ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot claadder_gate_tb_behav xil_defaultlib.claadder_gate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2991] 'AND_DELAY' is not declared under prefix 'fulladder_with_pg_gate' [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/claadder_gate.v:15]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2/CarryLookahead2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2/CarryLookahead2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3025.543 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri May 10 17:34:52 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun May 19 22:16:09 2019...

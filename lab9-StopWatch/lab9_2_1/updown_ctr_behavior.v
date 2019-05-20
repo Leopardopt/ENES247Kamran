@@ -17,7 +17,7 @@ module updown_ctr_behavior(
    wire clk_5MHz;
    reg clk_1Hz;
    
-   clk_5MHz U1
+  clk_wiz_0 U1
    (
      .clk_in1(clk),      
      .clk_out1(CLK_5MHz)

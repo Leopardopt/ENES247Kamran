@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 19 22:17:20 2019
+# Process ID: 6176
+# Current directory: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2/CarryLookahead2.runs/synth_1
+# Command line: vivado.exe -log claadder_gate.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source claadder_gate.tcl
+# Log file: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2/CarryLookahead2.runs/synth_1/claadder_gate.vds
+# Journal file: C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/CarryLookahead2/CarryLookahead2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source claadder_gate.tcl -notrace
+Command: synth_design -top claadder_gate -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1464 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 363.602 ; gain = 94.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'claadder_gate' [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/claadder_gate.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fulladder_with_pg_gate' [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/fulladder_with_pg_gate.v:6]
+	Parameter AND_DELAY bound to: 2 - type: integer 
+	Parameter OR_DELAY bound to: 2 - type: integer 
+	Parameter XOR_DELAY bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fulladder_with_pg_gate' (1#1) [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/fulladder_with_pg_gate.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cla_gate' [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/cla_gate.v:6]
+	Parameter AND_DELAY bound to: 2 - type: integer 
+	Parameter OR_DELAY bound to: 2 - type: integer 
+	Parameter XOR_DELAY bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cla_gate' (2#1) [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/cla_gate.v:6]
+ERROR: [Synth 8-476] no matching instance 'fulladder_with_pg_gate' for defparam [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/claadder_gate.v:15]
+ERROR: [Synth 8-6156] failed synthesizing module 'claadder_gate' [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_1_2/claadder_gate.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 419.164 ; gain = 150.547
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sun May 19 22:17:26 2019...
