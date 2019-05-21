@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552074465">
   <File Type="PA-TCL" Name="moore_sequence_detector_3processes.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="moore_sequence_detector_3processes_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="moore_sequence_detector_3processes_reports.tcl"/>
   <File Type="RDS-RDS" Name="moore_sequence_detector_3processes.vds"/>
   <File Type="RDS-UTIL" Name="moore_sequence_detector_3processes_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="moore_sequence_detector_3processes_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="moore_sequence_detector_3processes.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="moore_sequence_detector_3processes_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="moore_sequence_detector_3processes_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../moore_sequence_detector_3processes.v">

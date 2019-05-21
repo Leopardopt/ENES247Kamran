@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-18U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab10-FSM-Moore-Mealy/lab10_3_1/count_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-18U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab10-FSM-Moore-Mealy/lab10_3_1/mealy_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-18U.HCCMAIN/Documents/GitHub/ENES247Kamran/lab10-FSM-Moore-Mealy/lab10_3_1/lab3/lab3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

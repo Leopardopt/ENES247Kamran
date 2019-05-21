@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
          "-log mealy_sequence_detector_3processes.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source mealy_sequence_detector_3processes.tcl -notrace" );
 
