@@ -12,10 +12,11 @@ module count_down_timer_core(
     output reg [7:0] seg
     );
 
-   wire clk_5MHz;
+   wire clk_wiz_0;
    wire [5:0] second_count;
    wire [1:0] minute_count;
    wire second_count_done, second_count_59;
+   wire minute_count_done;
    wire [6:0] seg3, seg2, seg1, seg0;
    reg [22:0] count_1sec;
    wire cnt_done_i, cntdn_done, load_s;
@@ -27,18 +28,18 @@ module count_down_timer_core(
    parameter [2:0] S0=0, S1=1, S2=2, S3=3, S4=4, S5=5, S6=6;
    
    
-   clk_5MHz U1
+   clk_wiz_0 U1
    (
      .clk_in1(clk),      
-     .clk_out1(CLK_5MHz));     
+     .clk_out1(clk_wiz_0));     
 
 // generate 1Hz signal
      assign cnt_done_i = (count_1sec == 23'h4C4B40) ? 1'b1 : 1'b0; 
      
-     always @(posedge CLK_5MHz)
+     always @(posedge clk_wiz_0)
         cnt_done <= cnt_done_i;
         
-     always @(posedge CLK_5MHz)
+     always @(posedge clk_wiz_0)
      if(cnt_done | load_s)
          count_1sec <= 0;
      else
@@ -54,7 +55,7 @@ module count_down_timer_core(
         default : seg = {8'hff}; // turn OFF
     endcase
     
-    clk_divider_about_500hz_refresh_rate_4display R1 (.Clk(CLK_5MHz), .reset(load_s), .an(an[3:0]));
+    clk_divider_about_500hz_refresh_rate_4display R1 (.Clk(clk_wiz_0), .reset(load_s), .an(an[3:0]));
 
     bcdto7segment_dataflow MinM(.x(m_cnt_m), .seg(seg3));
     bcdto7segment_dataflow MinL(.x(m_cnt_l), .seg(seg2));
@@ -64,10 +65,10 @@ module count_down_timer_core(
     binary6Bit_to_2digitBCD R_minute(.addr({4'b0,minute_count}), .data({m_cnt_m,m_cnt_l}));
     binary6Bit_to_2digitBCD R_second(.addr(second_count), .data({s_cnt_m,s_cnt_l}));
 
-    down_counter_asynLoad_syncCE #(6) DC1(.clk(CLK_5MHz), .load(load_second), .ce(enable_second & cnt_done & enable), 
+    down_counter_asynLoad_syncCE #(6) DC1(.clk(clk_wiz_0), .load(load_second), .ce(enable_second & cnt_done & enable), 
     .count_input(6'd60), .count(second_count)); 
 
-    down_counter_asynLoad_syncCE #(2) DC2(.clk(CLK_5MHz), .load(load_minute), .ce(enable_minute & enable), 
+    down_counter_asynLoad_syncCE #(2) DC2(.clk(clk_wiz_0), .load(load_minute), .ce(enable_minute & enable), 
     .count_input(minute), .count(minute_count)); 
 
     assign second_count_done = (second_count==6'b0) ? 1'b1 : 1'b0;
@@ -79,9 +80,9 @@ module count_down_timer_core(
     
     assign an[7:4] = 4'b1111;
 
-    pb_debouncer U4 (.CLK_5MHz(CLK_5MHz), .pb(load), .pb_debounced(load_s));
+    pb_debouncer U4 (.CLK_5MHz(clk_wiz_0), .pb(load), .pb_debounced(load_s));
     
-    always@(posedge CLK_5MHz)
+    always@(posedge clk_wiz_0)
     begin
         load_minute <= 1'b0;
         load_second <= 1'b0;

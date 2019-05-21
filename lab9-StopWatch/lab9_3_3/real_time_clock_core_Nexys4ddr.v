@@ -12,8 +12,9 @@ module real_time_clock_core(
     output reg [7:0] seg
     );
 
-   wire clk_5MHz;
+   wire clk_wiz_0;
    wire [5:0] second_count, minute_count;
+   wire seconds_done_i;
    wire [6:0] seg3, seg2, seg1, seg0;
    reg [22:0] count_1sec;
    wire cnt_done_i;
@@ -22,21 +23,21 @@ module real_time_clock_core(
    wire [3:0] s_cnt_m, s_cnt_l;   
     wire thresh0, thresh1;
    
-   clk_5MHz U1
+   clk_wiz_0 U1
    (
      .clk_in1(clk),      
-     .clk_out1(CLK_5MHz));     
+     .clk_out1(clk_wiz_0));     
  
      assign cnt_done_i = (count_1sec == 23'h4C4B40) ? 1'b1 : 1'b0; 
      assign seconds_done_i = (second_count == 6'h3a) ? 1'b1 : 1'b0; 
      
-     always @(posedge CLK_5MHz or posedge reset)
+     always @(posedge clk_wiz_0 or posedge reset)
      if (reset) 
         cnt_done <= 0;
      else
         cnt_done <= cnt_done_i;
              
-    always @(posedge CLK_5MHz or posedge reset)
+    always @(posedge clk_wiz_0 or posedge reset)
     if (reset) 
        count_1sec <= 0;
     else if(cnt_done)
@@ -54,22 +55,22 @@ module real_time_clock_core(
         default : seg = {8'hff}; // turn OFF
     endcase
     
-    clk_divider_about_500hz_refresh_rate_4display R1 (.Clk(CLK_5MHz), .reset(reset), .an(an[3:0]));
+    clk_divider_about_500hz_refresh_rate_4display R1 (.Clk(clk_wiz_0), .reset(reset), .an(an[3:0]));
     assign an[7:4] = 4'b1111; 
       
 // instantiate up count core
 // the core generated should have clock eneable, synchronous clear, and threshold options selected
 // the threshold value is set to 3c (in hex).  The width of counter is 6 bits.    
-    counter_6Bit_dsp48 U2 (
-      .CLK(CLK_5MHz), 
+    c_counter_binary_0 U2 (
+      .CLK(clk_wiz_0), 
       .CE(cnt_done),
       .SCLR(reset | thresh0), 
       .THRESH0(thresh0), // output thresh0 when count=60
       .Q(second_count) // output [5 : 0] q
     );
 
-    counter_6Bit_dsp48 U3 (
-      .CLK(CLK_5MHz), 
+   c_counter_binary_0 U3 (
+      .CLK(clk_wiz_0), 
       .CE(thresh0),
       .SCLR(reset | thresh1), 
       .THRESH0(thresh1), // output thres10 when count=60
