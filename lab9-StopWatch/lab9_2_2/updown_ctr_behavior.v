@@ -14,13 +14,13 @@ module updown_ctr_behavior(
     output reg [COUNT_SIZE-1:0] count
     );
 
-   wire clk_5MHz;
+   wire clk_wiz_0;
    reg clk_1Hz;
    
-   clk_5MHz U1
+   clk_wiz_0 U1
    (
      .clk_in1(clk),      
-     .clk_out1(CLK_5MHz)
+     .clk_out1(clk_wiz_0)
 //	 .reset(reset)
 	 );     
  
@@ -30,13 +30,13 @@ module updown_ctr_behavior(
 
      assign cnt_done_i = (count_1sec == 23'h4C4B40) ? 1'b1 : 1'b0; 
      
-     always @(posedge CLK_5MHz or posedge reset)
+     always @(posedge clk_wiz_0 or posedge reset)
      if (reset) 
         cnt_done <= 0;
      else
         cnt_done <= cnt_done_i;
         
-     always @(posedge CLK_5MHz or posedge reset)
+     always @(posedge clk_wiz_0 or posedge reset)
      if (reset) 
         count_1sec <= 0;
      else if(cnt_done)
@@ -44,7 +44,7 @@ module updown_ctr_behavior(
      else
          count_1sec <= count_1sec + 1;
    
-    always @(posedge CLK_5MHz or posedge reset)
+    always @(posedge clk_wiz_0 or posedge reset)
         if (reset)
            count <= 0;
         else if (enable & cnt_done)

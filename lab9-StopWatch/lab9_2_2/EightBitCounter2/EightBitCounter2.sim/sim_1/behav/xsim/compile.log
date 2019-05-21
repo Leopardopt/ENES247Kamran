@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_2_2/updown_ctr_behavior.v" into library xil_defaultlib
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_2_2/updown_ctr_behavior.v:6]
+INFO: [VRFC 10-311] analyzing module updown_ctr_behavior
+INFO: [VRFC 10-2458] undeclared symbol CLK_5MHz, assumed default net type wire [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_2_2/updown_ctr_behavior.v:23]
+ERROR: [VRFC 10-2865] module 'updown_ctr_behavior' ignored due to previous errors [C:/Users/kamra/OneDrive/Documents/GitHub/ENES247Kamran/lab9-StopWatch/lab9_2_2/updown_ctr_behavior.v:9]
