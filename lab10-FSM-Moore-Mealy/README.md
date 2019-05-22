@@ -1,4 +1,4 @@
-Lab 10-101(Mealy Sequence Detector)
+# Lab 10-101(Mealy Sequence Detector)
 
 ### RTL Schematic:
 
@@ -16,7 +16,11 @@ Snippet of where the states are named and assigned
 
 ### Testing:
 
-There are three inputs of ain,clock, and M18 button of reset which resets the entire circuit. The LEDs output yout will be on at the start and when ain is turned on with each flip of clock, after 3 switches, the yout will turn on and count will increment in terms of binary value for up to 4 binary bits. yout is described to be 1 in case of states S0 if ain is zero and S3 if ain is on. That says why the yout comes on every 3 clock switches. 
+There are three inputs of ain,clock, and M18 button of reset which resets the entire circuit. The LEDs output yout will be on at the start and when ain is turned on with each flip of clock, after 3 switches, the yout will turn on and count will increment in terms of binary value for up to 4 binary bits. yout is described to be 1 in case of states S0 if ain is zero and S3 if ain is on. That says why the yout comes on every 3 clock switches. The following is how the states are made:
+
+![](lab1Behavior.PNG)
+
+ ![](FSMVerilogStates.PNG)
 
 #  Lab 10-201(Moore Sequence Detector)
 
